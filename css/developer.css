@@ -1,0 +1,56 @@
+@import url(base.css);
+
+
+.container {
+	position: relative;
+}
+
+.imagen{
+	width: 200px;
+	height: 200px;
+}
+
+.card {
+	display: block;
+	width: 350px;
+	height: 200px;
+	color: white;
+	background-color: 0088a9;
+	border-style: solid;
+	border-color: white;
+}
+
+.overlay {
+	position: absolute;
+	top: 1;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 30%;
+	width: 100%;
+	opacity: 0;
+	transform: 1s;
+	background-color: rgba(46, 49, 49, 0.8);
+}
+
+.container:hover .overlay {
+	opacity: 1;
+}
+
+.text {
+	color: white;
+	font-size: 20px;
+	position: absolute;	
+	font-family: "PT Serif", serif;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.cuerpo .container{
+	display:inline-block;
+	margin: 0.5em;
+	align-items: center;
+}
